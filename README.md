@@ -14,6 +14,22 @@ The app:
 
 This is a perfect beginner-friendly introduction to Docker networking, Python containers, and database connectivity.
 
+# Features
+
+• Containerized Python application
+
+• PostgreSQL database running in Docker
+
+• Automatic table creation
+
+• Automatic row insertion
+
+• Clean, formatted table output
+
+• Lightweight and reproducible environment
+
+• Image push capability to Docker Hub
+
 # project Structure 
 ```text
 
@@ -54,17 +70,7 @@ docker run -d \
 
 # Expected Output :
 
-Connected to the PostgreSQL!
-
-Inserted row ID: 1
-
-All rows in table:
-
-+----+-------------+---------+---------+-----+
-| ID | Student No. | Name    | Course  | Age |
-+----+-------------+---------+---------+-----+
-| 1  | 101         | Sriram  | DevOps  | 22  |
-+----+-------------+---------+---------+-----+
+![Final Output](images/lastoutput.png)
 
 # Step 5: Push Image to Docker Hub
 
@@ -78,3 +84,14 @@ All rows in table:
   ```text   
     docker pull vempatisriram2004/python_sql# Docker-Basic-Project
 ```
+# Technologies Used
+
+• python
+• Docker
+• PostgreSQL
+• psycopg2
+• DOCker Hub
+
+# Author
+vempati sriram
+

@@ -1,18 +1,37 @@
-Dockerized Python + PostgreSQL Mini Project
-* This project demonstrates how to use Docker to run a Python application that connects to a PostgreSQL database.
+# Dockerized Python + PostgreSQL Mini Project
+
+This project demonstrates how to use Docker to run a Python application that connects to a PostgreSQL database.
+
 The app:
 
-Connects to PostgreSQL
+1. Connects to PostgreSQL
 
-Creates a table
+2. Creates a table
 
-Inserts one row
+3. Inserts one row
 
-Reads and displays the row in a formatted output
+4. Reads and displays the row in a formatted output
 
 This is a perfect beginner-friendly introduction to Docker networking, Python containers, and database connectivity.
 
+# Features
+
+• Containerized Python application
+
+• PostgreSQL database running in Docker
+
+• Automatic table creation
+
+• Automatic row insertion
+
+• Clean, formatted table output
+
+• Lightweight and reproducible environment
+
+• Image push capability to Docker Hub
+
 # project Structure 
+```text
 
 Docker-Practice/
 │── app.py
@@ -20,12 +39,15 @@ Docker-Practice/
 │── requirements.txt
 │── README.md
 
-# Step 1: Create Docker Network
+```
 
+# Step 1: Create Docker Network
+```text
    docker network create mynetwork
+```
 
 # Step 2: docker network create mynetwork
-
+```text
 docker run -d \
   --name my-postgres \
   --network mynetwork \
@@ -34,36 +56,42 @@ docker run -d \
   -e POSTGRES_DB=mydb \
   -p 5432:5432 \
   postgres
+```
 
 # Step 3: Build the Python App Image
-  
+  ```text
     docker build -t python_sql .
+```
 
 # Step 4: Run the Python App Container
-
+```text
     docker run --rm --network mynetwork python_sql
+```
 
 # Expected Output :
 
-Connected to the PostgreSQL!
-
-Inserted row ID: 1
-
-All rows in table:
-
-+----+-------------+---------+---------+-----+
-| ID | Student No. | Name    | Course  | Age |
-+----+-------------+---------+---------+-----+
-| 1  | 101         | Sriram  | DevOps  | 22  |
-+----+-------------+---------+---------+-----+
+![Final Output](images/lastoutput.png)
 
 # Step 5: Push Image to Docker Hub
 
+```text
     docker login
     docker tag my-python-app vempatisriram2004/python_sql:latest
     docker push vempatisriram2004/python_sql:latest
-
+```
 
 # Step 6: Pull Image From Docker Hub
-      
+  ```text   
     docker pull vempatisriram2004/python_sql# Docker-Basic-Project
+```
+# Technologies Used
+
+• python
+• Docker
+• PostgreSQL
+• psycopg2
+• DOCker Hub
+
+# Author
+vempati sriram
+

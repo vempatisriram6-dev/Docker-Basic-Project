@@ -63,6 +63,9 @@ docker run -d \
     docker build -t python_sql .
 ```
 
+![Build](images/build.png)
+
+
 # Step 4: Run the Python App Container
 ```text
     docker run --rm --network mynetwork python_sql
@@ -80,9 +83,11 @@ docker run -d \
     docker push vempatisriram2004/python_sql:latest
 ```
 
+![Pull](images/pull.png)
+
 # Step 6: Pull Image From Docker Hub
   ```text   
-    docker pull vempatisriram2004/python_sql# Docker-Basic-Project
+    docker pull vempatisriram2004/python_sql:latest
 ```
 # Technologies Used
 
@@ -90,7 +95,7 @@ docker run -d \
 • Docker
 • PostgreSQL
 • psycopg2
-• DOCker Hub
+• Docker Hub
 
 # Author
 vempati sriram

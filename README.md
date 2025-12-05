@@ -47,7 +47,7 @@ Docker-Practice/
    docker network create mynetwork
 ```
 
-# Step 2: docker network create mynetwork
+# Step 2: Docker network create mynetwork
 ```text
 docker run -d \
   --name my-postgres \

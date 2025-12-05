@@ -102,6 +102,20 @@ docker run -d \
 
 • Docker Hub
 
+# What We learned 
+
+• To containerize a Python application using Docker
+
+• How to run PostgreSQL inside a Docker container
+
+• How to connect two containers using a Docker network
+
+• How to perform basic database operations from Python (create, insert, select)
+
+• How to build, tag, push, and pull Docker images
+
+• How to organize a project with proper structure and documentation
+
 # Author
 ```
 Name: Vempati Sriram

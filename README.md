@@ -34,10 +34,11 @@ This is a perfect beginner-friendly introduction to Docker networking, Python co
 ```text
 
 Docker-Practice/
-│── app.py
-│── Dockerfile
-│── requirements.txt
-│── README.md
+│── app.py            # Python application that connects to PostgreSQL
+│── Dockerfile        # Docker image configuration for Python app
+│── requirements.txt  # Python dependencies (psycopg2-binary)
+│── README.md         # Project documentation
+└── images
 
 ```
 

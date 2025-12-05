@@ -92,11 +92,19 @@ docker run -d \
 # Technologies Used
 
 • python
+
 • Docker
+
 • PostgreSQL
+
 • psycopg2
+
 • Docker Hub
 
 # Author
-vempati sriram
+```
+Name: Vempati Sriram
 
+GitHub: https://github.com/vempatisriram6-dev
+
+```
